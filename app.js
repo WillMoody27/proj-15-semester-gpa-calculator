@@ -33,7 +33,7 @@ function computeSemesterGPA() {
   }
   let sumOfQualityPoints = (sum.toFixed(2) / sumCred).toFixed(2);
 
-  resultGPA.innerHTML = `<h4>Current GPA For Semester: ${sumOfQualityPoints}</h4>
+  resultGPA.innerHTML = `<h4 class="sem-gpa">Your Semester GPA is: ${sumOfQualityPoints}</h4>
   <p>Total Credit Hours: ${sumCred}</p>`;
   return sumOfQualityPoints;
 }
