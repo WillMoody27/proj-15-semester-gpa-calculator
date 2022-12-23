@@ -13,61 +13,94 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./darkmode.css" />
-    <title>GPA CALCULATOR</title>
+    <title>College GPA CALCULATOR</title>
   </head>
   <body>
     <!-- Insert DarkMode Feature -->
     <div class="dark-mode-container">
       <button class="btn"><i class="fa-solid fa-sun"></i></button>
     </div>
-    <!-- Insert DarkMode Feature -->
-    <h1 class="gpa-main-head">GPA Calculator</h1>
-    <section class="gpa-calculator-section">
-      <!-- Value Input From User -->
-      <form class="form-input">
-        <div class="input-container">
-          <div class="input-content">
-            <label for="input-content">Class</label>
-            <input
-              type="text"
-              class="user-input class"
-              placeholder="Enter Class"
-            />
-          </div>
-          <div class="input-content">
-            <label for="input-content">Credits</label>
-            <input
-              type="text"
-              class="user-input credit-hours"
-              maxlength="4"
-              placeholder="---"
-            />
-          </div>
-          <div class="input-content">
-            <label for="input-content">Letter</label>
-            <input
-              type="text"
-              class="user-input letter-grade"
-              maxlength="2"
-              placeholder="---"
-            />
-          </div>
+    <!-- NAV -->
+    <div class="nav-container">
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="main-logo">
+            <a href="https://www.williamhmoody.com/index.html">Will's CS-Hub</a>
+          </h1>
+          <ul>
+            <li>
+              <a
+                class="nav-link"
+                href="https://www.williamhmoody.com/index.html"
+                >Tools</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="https://www.williamhmoody.com/about.html"
+                >About</a
+              >
+            </li>
+          </ul>
         </div>
-      </form>
+      </nav>
+    </div>
+    <!-- NAV -->
+    <!-- Insert DarkMode Feature -->
+    <h1 class="gpa-main-head">College GPA Calculator</h1>
+    <div class="gpa-calculator-section">
+      <section class="gpa-calculator-section">
+        <!-- Value Input From User -->
+        <form class="form-input">
+          <div class="input-container">
+            <div class="input-content">
+              <label for="input-content">Class</label>
+              <input
+                type="text"
+                class="user-input class"
+                placeholder="Enter Class"
+              />
+            </div>
+            <div class="input-content">
+              <label for="input-content">Credits</label>
+              <input
+                type="text"
+                class="user-input credit-hours"
+                maxlength="4"
+                placeholder="---"
+              />
+            </div>
+            <div class="input-content">
+              <label for="input-content">Letter</label>
+              <input
+                type="text"
+                class="user-input letter-grade"
+                maxlength="2"
+                placeholder="---"
+              />
+            </div>
+          </div>
+        </form>
 
-      <div class="btn-section">
-        <button type="button" id="add-row-id" class="add-row btn-section btns">
-          Add Row
-        </button>
-        <button type="submit" id="submit-input-id" class="submit-input btns">
-          Calculate
-        </button>
-      </div>
-      <p class="error"></p>
-      <div class="results-container">
-        <h2 class="results"></h2>
-      </div>
-    </section>
+        <div class="btn-section">
+          <button
+            type="button"
+            id="add-row-id"
+            class="add-row btn-section btns"
+          >
+            Add Row
+          </button>
+          <button type="submit" id="submit-input-id" class="submit-input btns">
+            Calculate
+          </button>
+        </div>
+        <p class="error"></p>
+        <div class="results-container">
+          <h2 class="results"></h2>
+        </div>
+      </section>
+    </div>
     <div class="gpa-calc-details">
       <div class="scale-details">
         <p class="scale-title">
@@ -166,6 +199,21 @@
       <p>Copyright © William Hellems-Moody All rights reserved</p>
     </footer>
     <!-- JS -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0FRD5FXQ2P"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0FRD5FXQ2P");
+    </script>
+    <!-- Google tag (gtag.js) -->
     <script src="./darkmode.js"></script>
     <script src="./app.js"></script>
   </body>
