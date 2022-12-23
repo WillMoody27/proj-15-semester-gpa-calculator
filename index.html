@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./darkmode.css" />
+    <title>GPA CALCULATOR</title>
+  </head>
+  <body>
+    <!-- Insert DarkMode Feature -->
+    <div class="dark-mode-container">
+      <button class="btn"><i class="fa-solid fa-sun"></i></button>
+    </div>
+    <!-- Insert DarkMode Feature -->
+    <h1 class="gpa-main-head">GPA Calculator</h1>
+    <section class="gpa-calculator-section">
+      <!-- Value Input From User -->
+      <form class="form-input">
+        <div class="input-container">
+          <div class="input-content">
+            <label for="input-content">Class</label>
+            <input
+              type="text"
+              class="user-input class"
+              placeholder="Enter Class"
+            />
+          </div>
+          <div class="input-content">
+            <label for="input-content">Credits</label>
+            <input
+              type="text"
+              class="user-input credit-hours"
+              maxlength="4"
+              placeholder="---"
+            />
+          </div>
+          <div class="input-content">
+            <label for="input-content">Letter</label>
+            <input
+              type="text"
+              class="user-input letter-grade"
+              maxlength="2"
+              placeholder="---"
+            />
+          </div>
+        </div>
+      </form>
+
+      <div class="btn-section">
+        <button type="button" id="add-row-id" class="add-row btn-section btns">
+          Add Row
+        </button>
+        <button type="submit" id="submit-input-id" class="submit-input btns">
+          Calculate
+        </button>
+      </div>
+      <p class="error"></p>
+      <div class="results-container">
+        <h2 class="results"></h2>
+      </div>
+    </section>
+    <div class="gpa-calc-details">
+      <div class="scale-details">
+        <p class="scale-title">
+          Standard Alphabetical grades and <br />
+          status symbols are as follows:
+        </p>
+        <ul class="quality-pt-list">
+          <li>4.00 quality points per semester hour attempted for A+</li>
+          <li>4.00 quality points per semester hour attempted for A &nbsp;</li>
+          <li>3.67 quality points per semester hour attempted for A-</li>
+          <li>3.33 quality points per semester hour attempted for B+</li>
+          <li>3.00 quality points per semester hour attempted for B &nbsp;</li>
+          <li>2.67 quality points per semester hour attempted for B-</li>
+          <li>2.33 quality points per semester hour attempted for C+</li>
+          <li>2.00 quality points per semester hour attempted for C &nbsp;</li>
+          <li>1.67 quality points per semester hour attempted for C-</li>
+          <li>1.33 quality points per semester hour attempted for D+</li>
+          <li>1.00 quality points per semester hour attempted for D &nbsp;</li>
+          <li>0.67 quality points per semester hour attempted for D-</li>
+          <li>0.00 quality points per semester hour attempted for F &nbsp;</li>
+        </ul>
+      </div>
+      <!-- GPA TABLE -->
+      <section class="gpa-table-section">
+        <table class="grade-table">
+          <tbody>
+            <tr>
+              <th class="table-grade">Grade</th>
+              <th class="table-gpa">GPA</th>
+            </tr>
+            <tr>
+              <td>A+</td>
+              <td>4.33</td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>4.00</td>
+            </tr>
+            <tr>
+              <td>A-</td>
+              <td>3.67</td>
+            </tr>
+            <tr>
+              <td>B+</td>
+              <td>3.33</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>3.00</td>
+            </tr>
+            <tr>
+              <td>B-</td>
+              <td>2.67</td>
+            </tr>
+            <tr>
+              <td>C+</td>
+              <td>2.33</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>2.00</td>
+            </tr>
+            <tr>
+              <td>C-</td>
+              <td>1.67</td>
+            </tr>
+            <tr>
+              <td>D+</td>
+              <td>1.33</td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td>1.00</td>
+            </tr>
+            <tr>
+              <td>D-</td>
+              <td>0.67</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- GPA TABLE -->
+    </div>
+    <footer class="footer-section">
+      <!-- Social -->
+      <div class="social-connect">
+        <h1>Connect</h1>
+        <a href="https://github.com/WillMoody27" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p>Copyright © William Hellems-Moody All rights reserved</p>
+    </footer>
+    <!-- JS -->
+    <script src="./darkmode.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

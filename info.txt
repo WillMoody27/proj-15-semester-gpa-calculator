@@ -1,0 +1,93 @@
+SEMESTER GPA LAYOUT
+
+MSU DENVER STANDARDS Alphabetical grades and status symbols are as follows [LETTER POINTS]
+    A+	4.00 quality points per semester hour attempted
+    A 	4.00 quality points per semester hour attempted
+    A-	3.67 quality points per semester hour attempted
+    B+	3.33 quality points per semester hour attempted
+    B	3.00 quality points per semester hour attempted
+    B-	2.67 quality points per semester hour attempted
+    C+	2.33 quality points per semester hour attempted
+    C	2.00 quality points per semester hour attempted
+    C-	1.67 quality points per semester hour attempted
+    D+	1.33 quality points per semester hour attempted
+    D	1.00 quality points per semester hour attempted
+    D-	0.67 quality points per semester hour attempted
+    F	0.00 quality points per semester hour attempted
+
+Rounded Values of Alphabetical grades and status symbols are as follows [LETTER POINTS]:
+    A+	4.00 quality points per semester hour attempted
+    A 	4.00 quality points per semester hour attempted
+    A-	3.70 quality points per semester hour attempted
+    B+	3.30 quality points per semester hour attempted
+    B	3.00 quality points per semester hour attempted
+    B-	2.70 quality points per semester hour attempted
+    C+	2.30 quality points per semester hour attempted
+    C	2.00 quality points per semester hour attempted
+    C-	1.70 quality points per semester hour attempted
+    D+	1.30 quality points per semester hour attempted
+    D	1.00 quality points per semester hour attempted
+    D-	0.70 quality points per semester hour attempted
+    F	0.00 quality points per semester hour attempted
+
+
+Calculate Quality (QP) Points Per Course HOURS (4 Cr, 3 Cr, 2 Cr, etc....) and LETTER_GRADE (A,A-,B+, B-,etc...): 
+
+ SINGLE_CLASS_QP = HOURS * LETTER_GRADE; 
+
+Ex. 
+ SINGLE_CLASS_QP_1 = 4 (Attempted Credits) * A+ (4.00) = 16.00 (Quality Points for That Course) 
+ SINGLE_CLASS_QP_2 = 4 (Attempted Credits) * B+ (3.33) = 13.32 (Quality Points for That Course) 
+ SINGLE_CLASS_QP_3 = 3 (Attempted Credits) * A+ (4.00) = 12.00 (Quality Points for That Course) 
+
+ TOTAL GPA FOR SEMESTER
+const SEMESTER_GPA = (SINGLE_CLASS_QP_1 + SINGLE_CLASS_QP_2 + SINGLE_CLASS_QP_3) / SUM_OF_TOTAL_ATTEMPTED_CREDITS
+
+// ======================== WEIGHTED GPA SECTION =============================
+
+******* First Semester Freshman Year *******
+Class	Level	Letter Grade	Unweighted GPA	Weighted GPA
+1	Honors Biology	B+	3.3	3.8
+2	Honors Algebra 1	B	3.0	3.5
+3	Honors Human Geography	B	3.0	3.5
+4	Freshman English	A	4.0	4.0
+5	Spanish 1	A-	3.7	3.7
+ 
+
+The weighted GPA for this semester is the average of all the numbers in the last column. Your first semester freshman year weighted GPA would be a 3.7.
+
+For the second semester, let's say you continued to take the same level classes but improved your grades:
+
+Second Semester Freshman Year
+Class	Level	Letter Grade	Unweighted GPA	Weighted GPA
+1	Honors Biology	A	4.0	4.5
+2	Honors Algebra 1	B+	3.3	3.8
+3	Honors Human Geography	B+	3.3	3.8
+4	Freshman English	A	4.0	4.0
+5	Spanish 1	A	4.0	4.0
+ 
+
+This time, when we average all the numbers in the last column, your second semester freshman year weighted GPA is a 4.0.
+
+For the first semester of sophomore year, let's say you decided to take mostly mid-level classes with one high-level class (you were ready to move up in the mid-level class and the regular-level classes where you earned As!).
+
+ 
+
+First Semester Sophomore Year
+Class	Level	Letter Grade	Unweighted GPA	Weighted GPA
+1	AP World History	B+	3.3	4.3
+2	Honors Chemistry	B+	3.3	3.8
+3	Honors Algebra II	B+	3.3	3.8
+4	Honors English	A-	3.7	4.2
+5	Honors Spanish II	A-	3.7	4.2
+ 
+
+If we average all the numbers in the last column, your first semester sophomore year weighted GPA comes out to a 4.1.
+
+Now, to figure out your cumulative GPA, we just have to average the weighted GPAs from each semester (note that this only works if you took the same amount of classes each semester—if you didn't, I would recommend just using the formula I described earlier in this section rather than going semester by semester).
+
+Semester	Weighted GPA
+First—Freshman Year	3.7
+Second—Freshman Year	4.0
+First—Sophomore Year	4.1
+Cumulative	3.9

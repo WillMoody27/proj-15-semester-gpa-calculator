@@ -1,0 +1,241 @@
+:root {
+  --box-shadow: 4px 4px 1px #0000003f;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.gpa-main-head {
+  text-align: center;
+  margin-top: 50px;
+}
+/* INPUT LABELS */
+.input-labels span {
+  padding: 10px;
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.input-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* INPUT LABELS */
+/* FORM/INPUT STYLE */
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+}
+.input-container {
+  display: flex;
+}
+.form-input {
+  display: flex;
+  align-items: center;
+}
+form input {
+  margin: 10px;
+  border: none;
+  background: #e7e7e7;
+  font-weight: bold;
+  /* box-shadow: var(--box-shadow); */
+  text-align: center;
+  border-radius: 10px;
+}
+.user-input {
+  padding: 10px;
+}
+.class-input {
+  display: flex;
+}
+/* Form Details */
+form input.class {
+  width: 150px;
+}
+form input.credit-hours {
+  width: 80px;
+}
+form input.letter-grade {
+  width: 60px;
+}
+form input.letter-points {
+  /* Will Auto Pop From JS */
+  width: 60px;
+}
+form input.quality-points {
+  /* Will Auto Pop From JS */
+  width: 60px;
+}
+/* Form Details */
+form input::placeholder {
+  color: rgba(0, 0, 0, 0.351);
+}
+input:focus {
+  outline: none;
+}
+/* END OF FORM/INPUT STYLE */
+/* CALC DETAILS */
+.scale-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.scale-details {
+  margin: 20px auto;
+}
+.gpa-calc-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+ul.quality-pt-list {
+  text-align: center;
+  padding: 10px;
+  list-style: none;
+  text-transform: capitalize;
+  border: 1px solid #00000032;
+  border-radius: 10px;
+  width: 370px;
+}
+/* CALC DETAILS */
+
+/* BTNS */
+.btns {
+  padding: 8px 15px;
+  font-size: 1rem;
+  margin: 5px;
+  border: none;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+}
+#add-row-id {
+  background: rgb(0, 188, 0);
+}
+#submit-input-id {
+  background: rgb(0, 128, 188);
+}
+#add-row-id:hover {
+  box-shadow: var(--box-shadow);
+}
+#submit-input-id:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/* END OF BTNS */
+.gpa-calculator-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* RESULT */
+.results-container {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #00000032;
+  width: 300px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* End OF RESULT */
+
+/* ERROR */
+.error {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+/* END OF ERROR */
+
+/* GPA TABLE SECTION */
+.gpa-table-section {
+  /* color: #000; */
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  margin-top: 40px;
+}
+td {
+  text-align: center;
+}
+table {
+  width: 100%;
+  border: 1px solid #00000032;
+  padding: 10px;
+  border-radius: 10px;
+}
+td {
+  background: #ffffff;
+
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  font-weight: bold;
+  color: #000;
+}
+/* END OF GPA TABLE SECTION */
+
+/* FOOTER+ */
+footer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+/* JS */
+.footer-show {
+  bottom: 0;
+}
+footer p {
+  text-align: center;
+}
+footer p span {
+  color: rgb(98, 98, 98);
+}
+
+.social-connect {
+  text-align: center;
+  margin: 20px auto;
+}
+.social-connect h1 {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 5px;
+  border-bottom: 1px solid #c9c9c9;
+}
+.social-connect i {
+  font-size: 2rem;
+  transition: all 0.25s ease-in-out;
+  color: #000;
+}
+.social-connect i:hover {
+  transform: scale(1.2);
+}
+/* Footer */
+/* FOOTER+ */
