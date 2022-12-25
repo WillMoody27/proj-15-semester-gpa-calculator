@@ -204,6 +204,7 @@ section.navbar-section {
 .gpa-main-head {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 /* INPUT LABELS */
 .input-labels span {
@@ -382,11 +383,27 @@ ul.quality-pt-list {
 .gpa-table-section:hover {
   height: 600px;
 }
+.additional-link {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: auto;
+  outline: var(--primary-outline);
+  padding: 5px 10px;
+  box-shadow: var(--primary-box-shadow);
+  transition: var(--primary-transition);
+}
+.additional-link:hover {
+  background-color: black;
+  color: #fff;
+}
 .expand-tools {
   text-align: center;
   border-bottom: 1px solid #000;
   width: 350px;
-  margin: auto;
+  margin: 30px auto;
 }
 td {
   text-align: center;
