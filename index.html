@@ -16,37 +16,69 @@
     <title>College GPA CALCULATOR</title>
   </head>
   <body>
-    <!-- Insert DarkMode Feature -->
-    <div class="dark-mode-container">
-      <button class="btn"><i class="fa-solid fa-sun"></i></button>
-    </div>
     <!-- NAV -->
-    <div class="nav-container">
+    <!-- NAVBAR -->
+    <section class="navbar-section">
       <nav class="navbar">
-        <div class="container">
-          <h1 class="main-logo">
-            <a href="https://www.williamhmoody.com/index.html">Will's CS-Hub</a>
-          </h1>
-          <ul>
-            <li>
-              <a
-                class="nav-link"
-                href="https://www.williamhmoody.com/index.html"
-                >Tools</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="https://www.williamhmoody.com/about.html"
-                >About</a
-              >
-            </li>
-          </ul>
+        <!-- NAV CONTENT -->
+        <div class="navbar-container">
+          <div class="navbar-toggle">
+            <i class="fa-solid fa-bars toggle"></i>
+          </div>
+          <div class="modal-menu hide-modal-menu">
+            <i class="fa-solid fa-xmark toggle hide-toggle"></i>
+            <div class="modal-menu-content">
+              <!-- NAV LINKS -->
+              <div class="navbar-link-container">
+                <a href="https://williamhmoody.com" class="navbar-link"
+                  >Tools</a
+                >
+                <a href="https://williamhmoody.com" class="navbar-link"
+                  >Projects</a
+                >
+                <a href="https://williamhmoody.com" class="navbar-link"
+                  >About</a
+                >
+                <div class="navbar-social-container">
+                  <ul>
+                    <a
+                      href="https://www.linkedin.com/in/williamhellemsmoody/"
+                      class="navbar-link"
+                    >
+                      <i class="fa-brands fa-linkedin" id="linkedin-icon"></i>
+                    </a>
+
+                    <a
+                      href="https://github.com/WillMoody27"
+                      class="navbar-link"
+                    >
+                      <i class="fa-brands fa-github" id="github-icon"></i>
+                    </a>
+
+                    <a href="#form-submission" class="navbar-link">
+                      <i class="fa-regular fa-envelope" id="envelope-icon"></i>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+              <!-- NAV LINKS -->
+            </div>
+          </div>
         </div>
+        <!-- NAV CONTENT -->
       </nav>
-    </div>
+    </section>
+    <!-- NAVBAR -->
     <!-- NAV -->
+    <!-- DARKMODE -->
+    <div class="darkmode">
+      <div class="darkmode-options">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon hide"></i>
+      </div>
+    </div>
+    <!-- DARKMODE -->
+
     <!-- Insert DarkMode Feature -->
     <h1 class="gpa-main-head">College GPA Calculator</h1>
     <div class="gpa-calculator-section">
@@ -101,6 +133,7 @@
         </div>
       </section>
     </div>
+    <h2 class="expand-tools">EXPANDABLE TOOLS SECTION</h2>
     <div class="gpa-calc-details">
       <div class="scale-details">
         <p class="scale-title">
@@ -196,6 +229,12 @@
           <i class="fa-brands fa-github"></i>
         </a>
       </div>
+      <p class="main-site-redirect-link">
+        <em
+          >Created with ❤️ by
+          <a href="https://williamhmoody.com">William Hellems-Moody</a></em
+        >
+      </p>
       <p>Copyright © William Hellems-Moody All rights reserved</p>
     </footer>
     <!-- JS -->
@@ -214,6 +253,7 @@
       gtag("config", "G-0FRD5FXQ2P");
     </script>
     <!-- Google tag (gtag.js) -->
+    <script src="./index.js"></script>
     <script src="./darkmode.js"></script>
     <script src="./app.js"></script>
   </body>
