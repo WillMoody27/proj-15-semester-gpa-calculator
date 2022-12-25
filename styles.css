@@ -60,6 +60,7 @@ body {
 /* NAVBAR */
 .main-head {
   padding: 10px;
+  font-weight: 900;
 }
 section.navbar-section {
   background: none;
