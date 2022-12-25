@@ -58,6 +58,9 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 /* NAVBAR */
+.main-head {
+  padding: 10px;
+}
 section.navbar-section {
   background: none;
   height: 70px;
@@ -101,8 +104,8 @@ section.navbar-section {
 }
 /* TOGGLE MENU */
 .navbar-toggle {
-  /* position: absolute; */
-  left: 0%;
+  position: absolute;
+  right: 0%;
   top: 0%;
   /* Added (BELOW) */
   position: fixed;
@@ -139,7 +142,7 @@ section.navbar-section {
 .fa-xmark {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   color: var(--nav-link-color);
 }
 .hide-modal-menu {
