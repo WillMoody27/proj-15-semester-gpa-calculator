@@ -1,207 +1,39 @@
-const _0x43adf1 = _0x1e73;
-(function (_0x4eab72, _0x240045) {
-  const _0x485219 = _0x1e73,
-    _0x1cf21b = _0x4eab72();
-  while (!![]) {
-    try {
-      const _0x2e312c =
-        (parseInt(_0x485219(0x128)) / 0x1) *
-          (parseInt(_0x485219(0x115)) / 0x2) +
-        parseInt(_0x485219(0x127)) / 0x3 +
-        parseInt(_0x485219(0x11a)) / 0x4 +
-        (-parseInt(_0x485219(0x125)) / 0x5) *
-          (-parseInt(_0x485219(0x136)) / 0x6) +
-        -parseInt(_0x485219(0x137)) / 0x7 +
-        parseInt(_0x485219(0x139)) / 0x8 +
-        (-parseInt(_0x485219(0x119)) / 0x9) *
-          (parseInt(_0x485219(0x12b)) / 0xa);
-      if (_0x2e312c === _0x240045) break;
-      else _0x1cf21b["push"](_0x1cf21b["shift"]());
-    } catch (_0x5a883a) {
-      _0x1cf21b["push"](_0x1cf21b["shift"]());
-    }
+const darkModeSun = document.querySelector(".fa-sun");
+const darkModeMoon = document.querySelector(".fa-moon");
+const docBody = document.documentElement;
+const darkModeFeature = localStorage.getItem("isDarkMode");
+if (darkModeFeature === "enabled") {
+  darkModeOn();
+}
+darkModeSun.addEventListener("mouseover", () => {
+  console.log("MOuse");
+  if (darkModeFeature == null || darkModeFeature === "disabled") {
+    localStorage.setItem("isDarkMode", "disabled");
   }
-})(_0x56a8, 0x6d83c);
-function W() {
-  const _0x19d3c6 = _0x1e73,
-    _0x14f781 = [
-      _0x19d3c6(0x138),
-      _0x19d3c6(0x12e),
-      _0x19d3c6(0x11e),
-      _0x19d3c6(0x12c),
-      _0x19d3c6(0x11b),
-      _0x19d3c6(0x117),
-      "click",
-      _0x19d3c6(0x135),
-      _0x19d3c6(0x121),
-      _0x19d3c6(0x133),
-      _0x19d3c6(0x131),
-      _0x19d3c6(0x11c),
-      "enabled",
-      _0x19d3c6(0x116),
-      _0x19d3c6(0x118),
-      _0x19d3c6(0x12f),
-      "hide",
-      "1586914iYHZpg",
-      "classList",
-      "contains",
-      _0x19d3c6(0x123),
-      _0x19d3c6(0x134),
-      _0x19d3c6(0x129),
-      _0x19d3c6(0x124),
-      _0x19d3c6(0x122),
-      _0x19d3c6(0x132),
-      _0x19d3c6(0x11d),
-      _0x19d3c6(0x126),
-      _0x19d3c6(0x12d),
-    ];
-  return (
-    (W = function () {
-      return _0x14f781;
-    }),
-    W()
-  );
-}
-const E = v;
-(function (_0x5149ab, _0x465067) {
-  const _0x3d9b0e = _0x1e73,
-    _0x31ca2b = v,
-    _0x592900 = _0x5149ab();
-  while (!![]) {
-    try {
-      const _0x194116 =
-        parseInt(_0x31ca2b(0x122)) / 0x1 +
-        (parseInt(_0x31ca2b(0x11a)) / 0x2) *
-          (parseInt(_0x31ca2b(0x11f)) / 0x3) +
-        -parseInt(_0x31ca2b(0x10b)) / 0x4 +
-        (-parseInt(_0x31ca2b(0x10d)) / 0x5) *
-          (parseInt(_0x31ca2b(0x123)) / 0x6) +
-        -parseInt(_0x31ca2b(0x115)) / 0x7 +
-        parseInt(_0x31ca2b(0x11c)) / 0x8 +
-        parseInt(_0x31ca2b(0x124)) / 0x9;
-      if (_0x194116 === _0x465067) break;
-      else _0x592900["push"](_0x592900[_0x3d9b0e(0x120)]());
-    } catch (_0x49891f) {
-      _0x592900["push"](_0x592900[_0x3d9b0e(0x120)]());
-    }
+});
+darkModeSun.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("hide")) {
+    e.target.classList.add("hide");
+    darkModeMoon.classList.remove("hide");
+    darkModeOn();
   }
-})(W, 0xe15a8);
-const darkModeSun = document[_0x43adf1(0x11b)](E(0x121)),
-  darkModeMoon = document[E(0x125)](E(0x109)),
-  docBody = document[E(0x11e)],
-  darkModeFeature = localStorage[E(0x10f)](E(0x113));
-function v(_0xe5368e, _0x69bdc5) {
-  const _0x270c82 = W();
-  return (
-    (v = function (_0x450ac6, _0x29503e) {
-      _0x450ac6 = _0x450ac6 - 0x109;
-      let _0x32b888 = _0x270c82[_0x450ac6];
-      return _0x32b888;
-    }),
-    v(_0xe5368e, _0x69bdc5)
-  );
-}
-function _0x56a8() {
-  const _0x1eeccf = [
-    "setItem",
-    "1974688NdKaXP",
-    "remove",
-    "target",
-    "361025lvJBpN",
-    "3BHhpIf",
-    "1343778ipggnV",
-    "6JlQPjN",
-    "2757022ZirwFT",
-    "hide",
-    "20630zZOoCf",
-    "15297849GVNiYt",
-    "disabled",
-    "253328AQruLm",
-    "isDarkMode",
-    "classList",
-    "dark-mode",
-    "mouseover",
-    "199505thUmxC",
-    "MOuse",
-    "6043852FEPOBw",
-    "42imYvyU",
-    "6279427QsDyZY",
-    ".fa-sun",
-    "596424lROmEU",
-    "110220AQhhtQ",
-    "add",
-    ".fa-moon",
-    "addEventListener",
-    "909qYYGsk",
-    "781688aeWcfu",
-    "querySelector",
-    "getItem",
-    "documentElement",
-    "138tKcyYH",
-    "log",
-    "shift",
-  ];
-  _0x56a8 = function () {
-    return _0x1eeccf;
-  };
-  return _0x56a8();
-}
-function _0x1e73(_0x3cd629, _0xa20de2) {
-  const _0x56a879 = _0x56a8();
-  return (
-    (_0x1e73 = function (_0x1e7367, _0xccf76b) {
-      _0x1e7367 = _0x1e7367 - 0x115;
-      let _0x2c41f5 = _0x56a879[_0x1e7367];
-      return _0x2c41f5;
-    }),
-    _0x1e73(_0x3cd629, _0xa20de2)
-  );
-}
-darkModeFeature === E(0x110) && darkModeOn(),
-  (darkModeSun[E(0x112)](E(0x11d), () => {
-    const _0x45c3c2 = _0x43adf1,
-      _0x449c1d = E;
-    console[_0x45c3c2(0x11f)](_0x449c1d(0x119)),
-      (darkModeFeature == null || darkModeFeature === _0x45c3c2(0x12d)) &&
-        localStorage[_0x449c1d(0x10c)](_0x449c1d(0x113), _0x449c1d(0x120));
-  }),
-  darkModeSun[E(0x112)](E(0x10a), (_0x1b4c33) => {
-    const _0x3b928a = _0x43adf1,
-      _0xee59b6 = E;
-    !_0x1b4c33[_0xee59b6(0x11b)][_0xee59b6(0x116)][_0xee59b6(0x117)](
-      _0xee59b6(0x114)
-    ) &&
-      (_0x1b4c33[_0xee59b6(0x11b)][_0xee59b6(0x116)][_0x3b928a(0x116)](
-        _0xee59b6(0x114)
-      ),
-      darkModeMoon[_0x3b928a(0x130)][_0xee59b6(0x118)](_0xee59b6(0x114)),
-      darkModeOn());
-  }),
-  darkModeMoon[E(0x112)](E(0x10a), (_0xd5aab1) => {
-    const _0x425cd8 = _0x43adf1,
-      _0x56f15f = E;
-    !_0xd5aab1[_0x425cd8(0x124)][_0x56f15f(0x116)][_0x56f15f(0x117)](
-      _0x425cd8(0x12a)
-    ) &&
-      (_0xd5aab1[_0x56f15f(0x11b)][_0x425cd8(0x130)][_0x425cd8(0x116)](
-        _0x56f15f(0x114)
-      ),
-      darkModeSun[_0x425cd8(0x130)][_0x56f15f(0x118)](_0x56f15f(0x114)),
-      darkModeOff());
-  }));
+});
+darkModeMoon.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("hide")) {
+    e.target.classList.add("hide");
+    darkModeSun.classList.remove("hide");
+    darkModeOff();
+  }
+});
 function darkModeOn() {
-  const _0x158859 = _0x43adf1,
-    _0x897484 = E;
-  docBody[_0x897484(0x116)][_0x158859(0x116)](_0x897484(0x10e)),
-    darkModeSun[_0x897484(0x116)][_0x897484(0x111)](_0x897484(0x114)),
-    darkModeMoon[_0x897484(0x116)][_0x897484(0x118)](_0x897484(0x114)),
-    localStorage["setItem"](_0x897484(0x113), _0x897484(0x110));
+  docBody.classList.add("dark-mode");
+  darkModeSun.classList.add("hide");
+  darkModeMoon.classList.remove("hide");
+  localStorage.setItem("isDarkMode", "enabled");
 }
 function darkModeOff() {
-  const _0x42bc37 = _0x43adf1,
-    _0x20d2d9 = E;
-  docBody[_0x20d2d9(0x116)][_0x20d2d9(0x118)](_0x20d2d9(0x10e)),
-    darkModeSun[_0x42bc37(0x130)][_0x20d2d9(0x118)](_0x42bc37(0x12a)),
-    darkModeMoon["classList"][_0x20d2d9(0x111)](_0x20d2d9(0x114)),
-    localStorage[_0x20d2d9(0x10c)](_0x42bc37(0x12f), _0x42bc37(0x12d));
+  docBody.classList.remove("dark-mode");
+  darkModeSun.classList.remove("hide");
+  darkModeMoon.classList.add("hide");
+  localStorage.setItem("isDarkMode", "disabled");
 }
